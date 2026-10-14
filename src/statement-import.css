@@ -1,0 +1,132 @@
+.statement-import-panel {
+  margin: 0 0 22px;
+  padding: 22px;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 8px 26px rgba(20, 28, 45, 0.045);
+}
+
+.statement-panel-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.statement-panel-heading h2 {
+  margin: 5px 0 7px;
+  font-size: 21px;
+  color: #182230;
+}
+
+.statement-panel-heading p {
+  margin: 0;
+  max-width: 720px;
+  color: #697586;
+  line-height: 1.55;
+  font-size: 13px;
+}
+
+.statement-count {
+  white-space: nowrap;
+  border-radius: 999px;
+  padding: 8px 11px;
+  background: #f3f6fa;
+  color: #445064;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.statement-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.statement-controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 135px;
+  flex: 1;
+}
+
+.statement-controls label span {
+  font-size: 11px;
+  font-weight: 700;
+  color: #5f6b7a;
+}
+
+.statement-controls select,
+.statement-controls input:not([type="file"]) {
+  width: 100%;
+  min-height: 42px;
+  padding: 0 11px;
+  border: 1px solid #dce2ea;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #263244;
+  font: inherit;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.statement-import-button {
+  min-height: 42px;
+  white-space: nowrap;
+}
+
+.statement-footnote {
+  margin-top: 14px;
+  color: #7b8492;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.statement-message {
+  margin-top: 13px;
+  padding: 11px 13px;
+  border-radius: 9px;
+  background: #f0f7ff;
+  color: #214f82;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.statement-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: 13px;
+  color: #657184;
+  font-size: 11px;
+}
+
+.statement-summary strong {
+  color: #202d3d;
+}
+
+@media (max-width: 700px) {
+  .statement-import-panel {
+    padding: 16px;
+  }
+
+  .statement-panel-heading {
+    flex-direction: column;
+  }
+
+  .statement-controls {
+    align-items: stretch;
+  }
+
+  .statement-controls label {
+    min-width: calc(50% - 8px);
+  }
+
+  .statement-import-button {
+    width: 100%;
+  }
+}
